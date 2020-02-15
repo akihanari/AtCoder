@@ -1,2 +1,1 @@
-# AtCoder
-AtCoderのコンテストで提出したコードなど
+# Practice_Atcoder
