@@ -133,9 +133,3 @@ print(min(f, 360 -f))
 #	print('{:.4f}'.format(f))
 
 # In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:

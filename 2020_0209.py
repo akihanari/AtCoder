@@ -1,7 +1,3 @@
-# print("Hello World!")
-
-# In[]:
-
 # %% [markdown]
 # **PracticeA**
 # 文字列Sの書かれたボールがA個、文字列Tの書かれたボールがB個あります。
@@ -290,9 +286,5 @@ for i in range(a - b):
 	if f > e:
 		e = f
 print(e)
-
-# In[]:
-
-# In[]:
 
 # In[]:

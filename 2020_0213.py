@@ -1,6 +1,3 @@
-
-# In[]:
-
 # %% [markdown]
 # **ABC081B - Shift only**
 # 黒板にN個の正の整数A1,...,ANが書かれています。
@@ -34,27 +31,6 @@ while True:
 print(count)
 
 # In[]:
-
-# %% [markdown]
-# **ABC081A - Placing Marbles**
-# すぬけ君は1,2,3の番号がついた3つのマスからなるマス目を持っています。
-# 各マスには'0'か'1'が書かれており、マスiにはsiが書かれています。
-# すぬけ君は'1'が書かれたマスにビー玉を置きます。
-# ビー玉が置かれるマスがいくつあるか求めてください
-# ・s1,s2,s3は'1'あるいは'0'
-
-# In[]:
-# -*- coding: utf-8 -*-
-s = list(map(int,input()))
-print("s[0]:", s[0], "s[1]:", s[1], "s[2]", s[2])
-count = 0
-for i in range(3):
-	print(i, s[i])
-	if s[i] == 1:
-		count += 1
-print(count)
-
-# In[]:
 # %% [markdown]
 # **ABC087B - Coins**
 # あなたは、500円玉をA枚、100円玉をB枚、50円玉をC枚持っています。
@@ -83,17 +59,5 @@ for i in range(a + 1):
 				print("a:", 500 * i, "(", i, ")", "b:", 100 * j, "(", j, ")", "c:", 50 * k, "(", k, ")")
 				count += 1
 print("count", count)
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
 
 # In[]:

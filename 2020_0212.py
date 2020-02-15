@@ -37,19 +37,3 @@ for i in range(3):
 print(count)
 
 # In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
-
-# In[]:
