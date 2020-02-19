@@ -17,7 +17,7 @@ A = list(map(int, input().split()))
 print("A:", A)
 A.sort()
 print("sortA:", A)
-lst = [i[0]*i[1] for i in itertools.combinations(A, 2)]
+lst = [i[0]*i[1] for i in itertools.combinations(A,2)]
 print("lst:", lst)
 lst.sort()
 print("sortlst:", lst)
@@ -26,10 +26,16 @@ print()
 
 # In[]:  # 今日書いたやつ
 import numpy as np
-
-# 一次元配列
-test_arr = np.asarray([1, 2, 3])
-print("test_arr")
+"""
+4 3
+3 3 -4 -2
+"""
+N, K = map(int, input().split())
+print("N:", N, "K:", K)
+A = list(map(int, input().split()))  # numpyを使う
+print("A:", A)
+A.sort()
+print("sortA:", A)
 
 # %% [markdown]
 # **他の人の回答1**<br>
@@ -72,6 +78,7 @@ print(l)
 # **他の人の回答2**<br>
 
 # In[]:
+# これは500点では？
 import numpy as np
 
 n, k = map(int, input().split())
