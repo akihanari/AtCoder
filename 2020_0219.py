@@ -17,7 +17,7 @@ A = list(map(int, input().split()))
 print("A:", A)
 A.sort()
 print("sortA:", A)
-lst = [i[0]*i[1] for i in itertools.combinations(A, 2)]
+lst = [i[0]*i[1] for i in itertools.combinations(A,2)]
 print("lst:", lst)
 lst.sort()
 print("sortlst:", lst)
@@ -26,23 +26,16 @@ print()
 
 # In[]:  # 今日書いたやつ
 import numpy as np
-
-# # 一次元配列
-# test_arr = np.asarray([1, 2, 3])
-# print("test_arr")
 """
 4 3
 3 3 -4 -2
 """
 N, K = map(int, input().split())
 print("N:", N, "K:", K)
-A = np.array(int, input().split()))  # numpyを使う
-print("A:", A)
-A = np.array(A)
+A = list(map(int, input().split()))  # numpyを使う
 print("A:", A)
 A.sort()
 print("sortA:", A)
-print()
 
 # %% [markdown]
 # **他の人の回答1**<br>
@@ -85,6 +78,7 @@ print(l)
 # **他の人の回答2**<br>
 
 # In[]:
+# これは500点では？
 import numpy as np
 
 n, k = map(int, input().split())
@@ -115,40 +109,4 @@ while ok - ng > 1: # 二分探索
     ng = cen
 print(ok)
 
-# %% [markdown]
-# **他の人の回答3**<br>
-
 # In[]:
-import numpy as np
-import math
-stdin = open(0)
-
-N,K = map(int,input().split())
-A = np.array([int(Ai) for Ai in input().split()])
-A = np.sort(A)
-
-maxA = max(np.abs(A))
-
-z = A[A==0]
-p = A[A>0]
-n = A[A<0]
-
-def check(x):
-    ret = 0
-    if x >= 0:
-        ret += N*len(z)
-    ret += np.searchsorted(A,x//p,side='right').sum()
-    ret += (N - np.searchsorted(A, -(x // -n))).sum()
-#     ret += (N-np.searchsorted(A,np.ceil(x/n))).sum()
-    ret -= np.count_nonzero(A*A<=x)
-    return ret//2;
-
-ub = maxA*maxA
-lb = -ub-1
-while ub-lb > 1:
-    mid = (ub+lb)>>1
-    if check(mid) < K:
-        lb = mid
-    else:
-        ub = mid
-print(ub)
