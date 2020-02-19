@@ -99,7 +99,4 @@ lst = [i[0]*i[1] for i in itertools.combinations(A,2)]
 lst.sort()
 print(lst[K - 1])
 
-
-
-
 # In[]:
