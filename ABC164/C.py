@@ -1,0 +1,4 @@
+# coding: utf-8
+N = int(input())
+S = [input() for i in range(N)]
+print(len(set(S)))
